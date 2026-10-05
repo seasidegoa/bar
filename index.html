@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sea Side Goa Bar</title>
+  <meta name="theme-color" content="#242629">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap">
+  <link rel="stylesheet" href="menu.css">
+  <script type="module" src="bar.js"></script>
+  <noscript><style>.loading { display: none; }</style></noscript>
+</head>
+<body>
+  <header>
+    <h1>Sea Side Goa Bar</h1>
+    <div id="langs"></div>
+  </header>
+  <nav id="nav"></nav>
+  <main id="menu">
+    <div class="loading" role="status"><span class="spinner"></span><p>Loading menu…<br>Загрузка меню…</p></div>
+    <noscript><p class="error">Please enable JavaScript, or ask your waiter for a paper menu.</p></noscript>
+  </main>
+  <!-- Shown above the menu when the "Dry Day" checkbox is ticked. -->
+  <template id="dry">
+    <div class="error">
+      <p>Alcohol is not served today.</p>
+      <p>Сегодня алкоголь не подаётся.</p>
+    </div>
+  </template>
+  <footer>
+    <p id="note"></p>
+    <p>Prices in ₹</p>
+  </footer>
+</body>
+</html>
